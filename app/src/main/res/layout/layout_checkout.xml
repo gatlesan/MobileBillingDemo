@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginBottom="10dip"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Choose a bank to proceed for payment"
+        />
+    <RadioGroup
+        android:id="@+id/grp_bank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/axis"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Axis bank"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/citi"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Citi bank"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/hdfc"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Hdfc bank"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/icici"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Icici bank"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginLeft="15dp"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/checkout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:onClick="onSubmitClicked"
+        />
+</LinearLayout>
